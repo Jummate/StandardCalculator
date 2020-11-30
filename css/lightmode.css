@@ -1,0 +1,171 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	width:100vw;
+	height:100vh;
+}
+body{
+	width:100%;
+	height:100%;
+	color:#F6A600;
+	padding:10px;
+	background-color:#fff;
+}
+/* ------------------------------- App Body ------------------------------ */
+.main-container{
+	background-color:#fff;
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	height:100%;
+}
+/* --------- Display Section ---------- */
+header{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	width:100%;
+	height:25%;
+}
+.top-display{
+	background-color: #fff;
+	width:100%;
+	height:35%;
+	color: #000;
+	font-size:0.9rem;
+	font-family:"Arial Black";
+}
+.cont-bottom-display{
+	width:100%;
+	height:65%;
+}
+header input{
+	background-color: #fff;
+	width:100%;
+	overflow:hidden;
+	font-size: 1.1rem;
+	color: #000;
+	text-align:right;
+	letter-spacing:2px;
+	outline:none;
+	border:none;
+	font-weight:bolder;
+	height:65%;
+	padding-bottom:0px;
+	font-family:"Arial Black";
+}
+/* --------- Input Section ---------- */
+main{
+	display:flex;
+	background-color:#fff;
+	flex-direction:column;
+	align-items:center;
+	color: #F6A600;
+	width:100%;
+	height:65%;
+	margin-top:-4%;
+}
+.cont-entry{
+	width:100%;
+	height:100%;
+	display:flex;
+	flex-direction:column;
+}
+.cont-entry div{
+	display:flex;
+	width:100%;
+	height:20%;
+}
+button{
+	height:100%;
+	width:20%;
+	color: #000;
+	font-size:0.9rem;
+	font-weight:bolder;
+	background-color:#fff;
+	border:none;
+	outline:none;
+	text-shadow:1px 0px 1px black;
+	transition:background-color 0.1s linear;
+}
+button:active{
+	background-color:rgba(2,2, 2, 0.1);
+}
+.secondary{
+	background-color: #f0f8ff;
+}
+.primary{
+	background-color:white;
+	color:#000;
+	box-shadow:2px 2px 5px black;
+}
+/* --------- Mode Switch - Dark or Light ---------- */
+footer{
+	font-size:1.0rem;
+	background-color:#cd8500;
+	width:100%;
+	height:10%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-top:20px;
+	color:black;
+	font-family:BroadWay;
+	font-weight:bolder;
+	letter-spacing:3px;
+}
+
+footer span{
+	margin-right:20px;
+	background-color:#FFA500;
+}
+footer div span{
+	margin-bottom:1px;
+	border-left:2px solid red;
+	cursor:pointer;
+	border-radius:5px;
+	box-shadow: 2px 2px 4px black,  -2px 2px 4px black;
+	
+}
+.on{
+	border-bottom: 4px solid blue;
+}
+
+/* ------------------------------- Media Queries ------------------------------ */
+
+/* --------- For Desktops, Laptops and other larger screens -------- */
+@media screen and (min-width: 767px){
+	.top-display{
+		font-size:1.4rem;
+	}
+	header input{
+		font-size:1.6rem;
+	}
+	button{
+		font-size:1.4rem;
+	}
+	footer{
+		font-size:1.5rem;
+	}
+}
+/* --------- For Ipads and Tablets -------- */
+@media screen and (max-width:768px) and (min-width:480px){
+	.top-display{
+		font-size:1.1rem;
+	}
+	header input{
+		font-size:1.3rem;
+	}
+	button{
+		font-size:1.1rem;
+	}
+	footer{
+		font-size:1.2rem;
+	}
+}
+
+
+

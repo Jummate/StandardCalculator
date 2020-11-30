@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/darkmode.css">
+		<title>Standard Calculator</title>
+	</head>
+	<body>
+		<!-- *********** App Body **************   -->
+		<div class="main-container">
+			<!-- *********** Display Section **************   -->
+			<header>
+				<div class="top-display"><span></span></div>
+				<div class="cont-bottom-display">
+					<input type="text" class ="bottom-display" value="" >
+				</div>
+			</header>
+			<main>
+				<!-- *********** Input Section **************   -->
+				<div class="cont-entry">
+					<div>
+						<button class="secondary clear-entry">CE</button>
+						<button class="secondary clear">C</button>
+						<button class="secondary delete">←</button>
+						<button class="secondary factorial">n!</button>
+						<button class="secondary sqrt">&radic;</button>
+					</div>
+					<div>
+						<button class="primary seven">7</button>
+						<button class="primary eight">8</button>
+						<button class="primary nine">9</button>
+						<button class="secondary division">/</button>
+						<button class="secondary any-sqrt"><sup>y</sup>&radic;x</button>
+					</div>
+					<div>
+						<button class="primary four">4</button>
+						<button class="primary five">5</button>
+						<button class="primary six">6</button>
+						<button class="secondary multiply">x</button>
+						<button class="secondary pi">π</button>
+					</div>
+					<div>
+						<button class="primary one">1</button>
+						<button class="primary two">2</button>
+						<button class="primary three">3</button>
+						<button class="secondary minus">&minus;</button>
+						<button class="secondary square">x<sup>2</sup></button>
+					</div>
+					<div>
+						<button class="primary dot">.</button>
+						<button class="primary zero">0</button>
+						<button class="primary equal">=</button>
+						<button class="secondary plus">+</button>
+						<button class="secondary any-square">x<sup>y</sup></button>
+					</div>
+				</div>
+			</main>
+			<!-- *********** Mode Switch - Dark or Light **************   -->
+			<footer>
+				<span>Dark Mode</span>
+				<div><span class="on">ON</span><span class="off">OFF</span></div>
+			</footer>
+		</div>
+		<script src="js/script.js"></script>
+	</body>
+</html>
