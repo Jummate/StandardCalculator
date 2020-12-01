@@ -193,7 +193,7 @@ anySqrt.addEventListener("click", function(){
 	if(entry || finalResult){
 		entry = pressEqual ? finalResult : entry;	//new entry or result got by pressing "equal" button?
 		combinedEntry+= entry;
-		topDisplay.innerHTML = "<small><sup>x</sup></small>√"+combinedEntry;
+		topDisplay.innerHTML = "<small><sup>y</sup></small>√"+combinedEntry;
 		numSqrt = entry || finalResult;				//the root of this number will be computed using the next number entry
 		entry = "";
 		finalResult = "";
